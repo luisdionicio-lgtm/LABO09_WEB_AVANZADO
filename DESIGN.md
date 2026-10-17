@@ -24,6 +24,14 @@ El recorrido CSR/SSR se reproduce manualmente con tres pasos, permite detenerse 
 
 ## Cuaderno cinema
 
-Apartado independiente /cine: verde nocturno #101812, panel #18231b, texto marfil #f1f0e7 y acento #d5e7a7. Mantiene Libre Baskerville y Geist. Imagen cinematográfica grande con sombreado funcional para leer el título; carruseles nativos de pósteres, filtros y panel de detalles dentro de la página.
+Apartado independiente /cine: tinta #101017, panel ciruela #1c1b26, texto marfil #f6f0e8, cobre #ffbc91 y aguamarina #a5dcd7. Geist para titulares y catálogo; Libre Baskerville en la firma editorial. Cartelera con destacados seleccionables, ranking de películas, series panorámicas, búsqueda y ficha dentro de la página.
 
 Motion según Emil Kowalski: feedback de presión 140 ms, escala de póster en hover de 240 ms, apertura del detalle 240 ms, propiedades explícitas y movimiento reducido. Sin autoplay ni controles de reproducción ficticios. Las búsquedas se esperan 450 ms y se cancelan cuando cambia el término. Navegación y foco permanecen accesibles.
+
+## Cartelera cinematográfica
+
+Nueva identidad del apartado de cine: tinta #101017, panel ciruela #1c1b26, cobre #ffbc91, marfil #f6f0e8 y aguamarina #a5dcd7. Inspiración funcional en las plataformas de catálogo, con marca y colores propios.
+
+La portada se separa en CinemaHero y permite elegir entre cuatro películas populares sin autoplay. La navegación Descubrir/Películas/Series utiliza los filtros existentes. Las películas populares muestran su posición en la respuesta de TMDB; las series usan tarjetas panorámicas. Las flechas de las filas se deshabilitan al llegar a los extremos. Todos los títulos abren la ficha existente.
+
+El encabezado principal usa Geist con peso alto para que el cartel destaque. Libre Baskerville queda en la firma cinema y las notas editoriales. Se conservan el catálogo SSR, la búsqueda CSR, las credenciales privadas y el movimiento reducido.

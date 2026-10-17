@@ -21,7 +21,7 @@ La clave se usa únicamente en `app/lib/tmdb.ts`, módulo protegido con `server-
 | Diseño con Tailwind | Tailwind sigue integrado en el proyecto y se usa para utilidades de accesibilidad; el apartado amplía el sistema con CSS propio, componentes y variables. |
 | async/await | Consultas del servidor, búsqueda cliente y carga del detalle. |
 | Estados | Carga, resultados vacíos, errores recuperables, póster ausente y botones de paginación deshabilitados. |
-| Diseño propio | Verde nocturno, marfil, acento salvia, tipografía editorial, portada con imagen, carruseles y fichas. |
+| Diseño propio | Tinta, cobre, marfil y aguamarina; destacados seleccionables, pósteres con ranking, series panorámicas, carruseles y fichas. |
 
 ## Por qué SSR y CSR
 
