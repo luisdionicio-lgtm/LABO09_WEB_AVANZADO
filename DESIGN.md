@@ -21,3 +21,9 @@ Verificación: lint y build correctos. Navegador de escritorio: flechas del carr
 Se añadieron miniaturas seleccionables para los Pokémon iniciales y transición de las ilustraciones al entrar en la diapositiva. Las secciones de la portada aparecen una sola vez al entrar en el área visible; sin JavaScript o con movimiento reducido, siguen visibles.
 
 El recorrido CSR/SSR se reproduce manualmente con tres pasos, permite detenerse y reiniciarse, y limpia sus temporizadores al desmontar el componente o cambiar de estrategia. Con movimiento reducido muestra el resultado de inmediato. Un indicador de lectura usa la animación nativa de scroll cuando el navegador la admite.
+
+## Cuaderno cinema
+
+Apartado independiente /cine: verde nocturno #101812, panel #18231b, texto marfil #f1f0e7 y acento #d5e7a7. Mantiene Libre Baskerville y Geist. Imagen cinematográfica grande con sombreado funcional para leer el título; carruseles nativos de pósteres, filtros y panel de detalles dentro de la página.
+
+Motion según Emil Kowalski: feedback de presión 140 ms, escala de póster en hover de 240 ms, apertura del detalle 240 ms, propiedades explícitas y movimiento reducido. Sin autoplay ni controles de reproducción ficticios. Las búsquedas se esperan 450 ms y se cancelan cuando cambia el término. Navegación y foco permanecen accesibles.

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const links = [["/", "Inicio"], ["/pokemon-csr", "Pokémon CSR"], ["/pokemon-ssr", "Pokémon SSR"], ["/weather", "Clima"]];
+const links = [["/", "Inicio"], ["/pokemon-csr", "Pokémon CSR"], ["/pokemon-ssr", "Pokémon SSR"], ["/weather", "Clima"], ["/cine", "Cine & series"]];
 
 export default function Navigation() {
   const pathname = usePathname();

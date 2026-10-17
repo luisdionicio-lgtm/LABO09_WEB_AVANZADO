@@ -410,3 +410,7 @@ th:first-child, td:first-child { padding-left: 16px; }
   .pokemon-selector button:hover img { transform: none; }
   .reading-progress { display: none; }
 }
+@media (max-width:640px) {
+  .site-header nav { overflow-x:auto; white-space:nowrap; justify-content:flex-start; gap:20px; scrollbar-width:none; }
+  .site-header nav a { flex-shrink:0; }
+}

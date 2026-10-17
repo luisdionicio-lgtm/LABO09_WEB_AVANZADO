@@ -1,6 +1,6 @@
 # Laboratorio 09 — CSR y SSR
 
-Alcance: ejercicios 1.1 (PokeApp) y 2.1 (dashboard híbrido). La sección TAREA, la galería OMDb y sus entregables quedan pendientes.
+Alcance: ejercicios 1.1 (PokeApp) y 2.1 (dashboard híbrido). La tarea integradora se documenta por separado en tarea-cine.md y utiliza TMDB por indicación del usuario.
 
 ## Ejecutar
 

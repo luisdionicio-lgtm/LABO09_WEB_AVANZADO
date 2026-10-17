@@ -15,7 +15,7 @@ npm run dev
 - `/pokemon-ssr`: consulta PokeAPI en el servidor, al recibir una visita.
 - `/weather`: Lima desde el servidor y cuatro ciudades consultadas en el cliente.
 
-La sección de tarea de películas y series queda pendiente.
+La tarea integradora está en `/cine`: películas y series con TMDB, catálogo SSR, búsqueda CSR y detalles sin recargar. Configurar `TMDB_API_KEY` en `.env.local` tomando `.env.example` como referencia. La clave privada no se publica. Documentación: [Tarea de cine](docs/tarea-cine.md).
 
 ## Verificar
 
