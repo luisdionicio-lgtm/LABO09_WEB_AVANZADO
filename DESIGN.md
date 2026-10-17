@@ -35,3 +35,13 @@ Nueva identidad del apartado de cine: tinta #101017, panel ciruela #1c1b26, cobr
 La portada se separa en CinemaHero y permite elegir entre cuatro películas populares sin autoplay. La navegación Descubrir/Películas/Series utiliza los filtros existentes. Las películas populares muestran su posición en la respuesta de TMDB; las series usan tarjetas panorámicas. Las flechas de las filas se deshabilitan al llegar a los extremos. Todos los títulos abren la ficha existente.
 
 El encabezado principal usa Geist con peso alto para que el cartel destaque. Libre Baskerville queda en la firma cinema y las notas editoriales. Se conservan el catálogo SSR, la búsqueda CSR, las credenciales privadas y el movimiento reducido.
+
+## Ambient Cinema — versión pública
+
+La dirección final usa obsidiana #070709, grafito y petróleo #10171d, acero #91b7cb y ámbar #d8ad72. El dock y los diálogos usan superficies translúcidas con blur. La luz ambiental se deriva del backdrop: imagen duplicada desenfocada y muestreo de color cuando CORS lo permite; el cambio se funde durante 1000 ms.
+
+Framer Motion implementa tilt con springs, vista previa tras 400 ms de hover, transiciones compartidas con layoutId, apertura y cierre de la ficha y feedback de Mi lista. Los skeletons usan shimmer. Se respetan movimiento reducido, foco y navegación por teclado; los hover no se activan en touch.
+
+Datos ampliados desde TMDB: genres, images/logos, videos, credits y similar. Los logos priorizan español e inglés y el título queda como alternativa. Los tráilers de YouTube se seleccionan desde TMDB, las vistas previas van silenciadas y el tráiler completo se abre por acción del usuario. Si TMDB no ofrece vídeo, el botón informa que no está disponible.
+
+Mi lista se guarda únicamente en localStorage, sin cuenta. Los géneros filtran la selección cargada y las páginas de búsqueda. El detalle usa dialog nativo, conserva el foco y permite Escape. El catálogo original sigue siendo SSR; búsqueda, listas, filtros y detalles usan CSR.

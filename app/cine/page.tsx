@@ -12,5 +12,5 @@ async function CatalogContent() {
   return <Cinema initialCatalog={result.catalog} initialError={result.error} />;
 }
 export default function CinemaPage() {
-  return <main className="cinema-page"><Suspense fallback={<div className="cinema-loading" role="status"><span className="loading-line" /><p>Preparando tu próxima historia…</p></div>}><CatalogContent /></Suspense></main>;
+  return <main className="cinema-page"><Suspense fallback={<div className="cinema-loading cinema-loading-catalog" role="status"><p>Preparando tu próxima historia…</p><div className="cinema-loading-hero" aria-hidden="true"/><div className="cinema-skeletons" aria-hidden="true">{[0,1,2,3,4,5].map(item=><div key={item}/>)}</div></div>}><CatalogContent /></Suspense></main>;
 }

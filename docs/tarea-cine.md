@@ -76,3 +76,9 @@ https://github.com/luisdionicio-lgtm/LABO09_WEB_AVANZADO
 ![Catálogo SSR](capturas/cine-catalogo.png)
 ![Búsqueda CSR](capturas/cine-busqueda.png)
 ![Detalle en la misma página](capturas/cine-detalle.png)
+
+## Ampliación Ambient Cinema
+
+Componentes nuevos: CinemaHero (dock, logo y ambiente), MovieCard (hover 400 ms, tilt y vista previa), MovieDetails (dialog, créditos y similares), CinemaBento, RatingRing y useMyList. La búsqueda filtra por genre_ids; los filtros de género se aplican a los títulos de la página consultada. Mi lista persiste en este navegador.
+
+La adaptación a TMDB permite logos, tráilers, créditos y recomendaciones desde sus endpoints oficiales. Framer Motion gestiona las transiciones; las preferencias de movimiento reducido desactivan tilt y previsualizaciones. No se publican claves; Vercel utiliza TMDB_API_KEY como variable sensible de producción.

@@ -10,6 +10,8 @@ export interface FilmSummary {
   overview: string;
   rating: number;
   votes: number;
+  genreIds: number[];
+  genreNames: string[];
 }
 export interface Film extends FilmSummary {
   genres: string[];
@@ -27,6 +29,11 @@ export interface Film extends FilmSummary {
   budget: number;
   revenue: number;
   homepage: string;
+  logo: string;
+  trailer: string;
+  similar: FilmSummary[];
+  castPhotos: string[];
 }
 export interface SearchResult { films: FilmSummary[]; total: number; pages: number; }
-export interface Catalog { popular: FilmSummary[]; series: FilmSummary[]; classics: FilmSummary[]; }
+export interface Genre { id: number; name: string; }
+export interface Catalog { popular: FilmSummary[]; series: FilmSummary[]; classics: FilmSummary[]; genres?: Genre[]; featured?: Film[]; }
