@@ -356,3 +356,57 @@ th:first-child, td:first-child { padding-left: 16px; }
   .showcase-pokemon { max-width: 400px; }
   .showcase-copy { padding-top: 44px; padding-bottom: 44px; }
 }
+
+/* Selección visual y recorrido de lectura. */
+.pokemon-selector { display: grid; grid-template-columns: repeat(3,1fr); padding: 0 24px; background: #fcfcf8; color: var(--foreground); }
+.pokemon-selector button { display: flex; align-items: center; gap: 16px; padding: 15px 20px; border: 0; border-bottom: 3px solid transparent; background: transparent; text-align: left; position: relative; min-width: 0; transition: background-color 180ms ease, border-color 180ms ease; }
+.pokemon-selector button + button { border-left: 1px solid var(--line); }
+.pokemon-selector button[aria-pressed=true] { border-bottom-color: var(--green); background: #edf1e7; }
+.pokemon-selector img { flex-shrink: 0; width: 60px; height: 60px; object-fit: contain; transition: transform 220ms var(--ease-out); }
+.pokemon-selector strong { display: block; font-size: 12px; font-weight: 500; }
+.pokemon-selector small { display: block; font-size: 10px; color: var(--muted); margin-top: 5px; }
+.selector-number { margin-left: auto; font-size: 10px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.showcase-slide .showcase-pokemon { transform: rotate(-11deg) translateY(12px) scale(.96); opacity: .6; transition: transform 280ms var(--ease-out),opacity 240ms ease; }
+.showcase-slide[data-active=true] .showcase-pokemon { transform: rotate(-7deg) translateY(0) scale(1); opacity: 1; }
+.scroll-reveal { transition: opacity 280ms var(--ease-out),transform 280ms var(--ease-out); }
+.scroll-reveal[data-reveal=waiting] { opacity: 0; transform: translateY(18px); }
+.scroll-reveal[data-reveal=visible] { opacity: 1; transform: translateY(0); }
+.journey-play { display: flex; align-items: center; gap: 9px; border: 0; background: transparent; color: var(--green); padding: 12px 0; margin-top: 10px; font-size: 11px; min-height: 44px; }
+.journey-play svg { flex-shrink: 0; }
+.journey-step-number { transition: color 200ms ease,background-color 200ms ease,border-color 200ms ease; }
+.journey-steps li::after { transition: border-color 200ms ease; }
+.journey-steps li.step-complete .journey-step-number { background: var(--green); border-color: var(--green); color: #f7f6f0; }
+.journey-steps li.step-complete::after { border-color: var(--green); }
+.journey-steps li[aria-current=step] h3 { color: var(--green); }
+.journey-result { font-size: 11px; color: var(--muted); padding: 12px 0; border-top: 1px solid var(--line); margin: 0 0 14px; min-height: 44px; }
+.reading-progress { display: none; }
+@supports (animation-timeline:scroll()) {
+  .reading-progress { display: block; position: fixed; inset: 0 0 auto; height: 3px; z-index: 30; background: #618156; transform-origin: left; animation: reading-progress linear both; animation-timeline: scroll(root block); }
+}
+@keyframes reading-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (hover:hover) and (pointer:fine) {
+  .pokemon-selector button:hover { background: #edf1e7; }
+  .pokemon-selector button:hover img { transform: translateY(-3px) rotate(-5deg); }
+  .showcase-slide[data-active=true] .showcase-art:hover .showcase-pokemon { transform: rotate(-3deg) translateY(-5px) scale(1); }
+  .journey-play:hover { text-decoration: underline; text-underline-offset: 4px; }
+}
+@media (max-width:900px) {
+  .pokemon-selector { padding: 0 10px; }
+  .pokemon-selector button { padding: 13px 10px; gap: 10px; }
+  .selector-number { display: none; }
+}
+@media (max-width:640px) {
+  .pokemon-selector { padding: 0; }
+  .pokemon-selector button { flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 2px; padding: 10px 4px; }
+  .pokemon-selector img { width: 48px; height: 48px; }
+  .pokemon-selector strong { font-size: 10px; }
+  .pokemon-selector small { display: none; }
+  .journey-play { font-size: 12px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .scroll-reveal,.scroll-reveal[data-reveal=waiting] { opacity: 1; transform: none; transition: none; }
+  .showcase-slide .showcase-pokemon,.showcase-slide[data-active=true] .showcase-pokemon,.showcase-slide[data-active=true] .showcase-art:hover .showcase-pokemon { opacity: 1; transform: rotate(-7deg); transition: none; }
+  .pokemon-selector img,.journey-step-number { transition: none; }
+  .pokemon-selector button:hover img { transform: none; }
+  .reading-progress { display: none; }
+}

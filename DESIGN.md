@@ -15,3 +15,9 @@ Portada con carrusel nativo scroll-snap: tres Pokémon iniciales, flechas, indic
 La comparación Navegador/Servidor cambia los pasos y el enlace del ejercicio. No genera consultas a APIs. Las fichas prefieren official-artwork y conservan el sprite como alternativa. El clima incorpora accesos directos a las cuatro ciudades.
 
 Verificación: lint y build correctos. Navegador de escritorio: flechas del carrusel, actualización de indicadores y comparación interactiva. La adaptación móvil usa una columna y desplazamiento nativo; el gesto táctil requiere comprobación en un teléfono real.
+
+## Movimiento y selección visual
+
+Se añadieron miniaturas seleccionables para los Pokémon iniciales y transición de las ilustraciones al entrar en la diapositiva. Las secciones de la portada aparecen una sola vez al entrar en el área visible; sin JavaScript o con movimiento reducido, siguen visibles.
+
+El recorrido CSR/SSR se reproduce manualmente con tres pasos, permite detenerse y reiniciarse, y limpia sus temporizadores al desmontar el componente o cambiar de estrategia. Con movimiento reducido muestra el resultado de inmediato. Un indicador de lectura usa la animación nativa de scroll cuando el navegador la admite.

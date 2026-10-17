@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return <html lang="es" className={`${geistSans.variable} ${geistMono.variable} ${editorial.variable}`}><body>
+    <div className="reading-progress" aria-hidden="true" />
     <a className="skip-link" href="#contenido">Saltar al contenido</a>
     <Suspense fallback={<header className="site-header">Cuaderno</header>}><Navigation /></Suspense>
     <div id="contenido" className="site-content">{children}</div>
