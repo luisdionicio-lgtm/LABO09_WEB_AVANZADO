@@ -55,4 +55,3 @@ Las temperaturas y Pokémon son datos variables; las capturas registran una ejec
 ![Comparación del dashboard](capturas/weather-comparacion.png)
 
 La tabla compara el origen de los datos, el contenido inicial, la interacción y la visibilidad de las consultas. Una página SSR puede incluir componentes cliente interactivos, como demuestra este dashboard.
-

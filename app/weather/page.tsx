@@ -39,4 +39,3 @@ export default function WeatherDashboard() {
     <p className="source-note weather-source">Fuente: Open-Meteo. Temperatura en grados Celsius y viento en kilómetros por hora.</p>
   </main>;
 }
-

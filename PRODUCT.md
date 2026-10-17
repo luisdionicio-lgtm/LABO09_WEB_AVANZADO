@@ -11,4 +11,3 @@ Conservar Next.js, TypeScript, Tailwind, App Router, Axios y la separación CSR/
 
 ## Brand commitments
 El usuario confirmó presentación editorial clara, marfil y verde, formal y propia, sin contenido ajeno al laboratorio. Animaciones discretas y funcionales.
-
