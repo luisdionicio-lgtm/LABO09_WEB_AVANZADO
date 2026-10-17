@@ -79,6 +79,12 @@ https://github.com/luisdionicio-lgtm/LABO09_WEB_AVANZADO
 
 ## Ampliación Ambient Cinema
 
+Disponible públicamente en [Cuaderno Cinema](https://labo09-web-avanzado.vercel.app/cine), sin iniciar sesión. Se verificaron HTTP 200, catálogo SSR, búsqueda pública y apertura de la ficha con reparto y recomendaciones.
+
+La dirección de color utiliza obsidiana, grafito, azul petróleo, acero y acentos ámbar. El ambiente de cada película se adapta a su imagen de fondo.
+
+![Portada pública Ambient Cinema](capturas/cine-portada.png)
+
 Componentes nuevos: CinemaHero (dock, logo y ambiente), MovieCard (hover 400 ms, tilt y vista previa), MovieDetails (dialog, créditos y similares), CinemaBento, RatingRing y useMyList. La búsqueda filtra por genre_ids; los filtros de género se aplican a los títulos de la página consultada. Mi lista persiste en este navegador.
 
 La adaptación a TMDB permite logos, tráilers, créditos y recomendaciones desde sus endpoints oficiales. Framer Motion gestiona las transiciones; las preferencias de movimiento reducido desactivan tilt y previsualizaciones. No se publican claves; Vercel utiliza TMDB_API_KEY como variable sensible de producción.

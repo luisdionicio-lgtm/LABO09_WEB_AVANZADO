@@ -2,6 +2,8 @@
 
 Laboratorio de Next.js sobre renderizado CSR y SSR.
 
+Versión pública: [Cuaderno](https://labo09-web-avanzado.vercel.app) · [Cartelera de cine y series](https://labo09-web-avanzado.vercel.app/cine).
+
 ## Ejecutar
 
 ```sh
